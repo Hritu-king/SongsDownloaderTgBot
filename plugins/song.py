@@ -17,11 +17,11 @@ def time_to_seconds(time):
 ## Commands --------
 @Client.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("𝐈'𝐦 𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐲𝐨𝐮𝐫 𝐥𝐨𝐯𝐞𝐥𝐲 𝐬𝐨𝐧𝐠𝐬 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦🎸🎸🎸.[🎶](https://fzstream.techwizardent.com/70785)𝐃𝐨 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐤𝐧𝐨𝐰 𝐦𝐨𝐫𝐞 𝐚𝐛𝐨𝐮𝐭 𝐦𝐞 𝐡𝐢𝐭 𝐭𝐡𝐞 @ElizaSupporters.",
+       await message.reply("𝐈'𝐦 𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐲𝐨𝐮𝐫 𝐥𝐨𝐯𝐞𝐥𝐲 𝐬𝐨𝐧𝐠𝐬 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦🎸🎸🎸. A Bot By @Prime_Hritu • @Private_bots",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔔', url='https://t.me/Updates_of_ElizaBot'),
+                    InlineKeyboardButton('𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔔', url='https://t.me/Private_bots'),
                     InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡 𝐈𝐧𝐥𝐢𝐧𝐞', switch_inline_query_current_chat='')
                 ]
             ]
@@ -34,7 +34,7 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Developer', url='https://t.me/SehathSanvidu')
+                    InlineKeyboardButton('Developer', url='https://t.me/Prime_Hritu')
                 ]
             ]
         )
@@ -42,7 +42,7 @@ async def help(client, message):
 
 @Client.on_message(filters.command(['about']))
 async def about(client, message):
-       await message.reply("➪<b>Name</b> : ✫<i>Song Downloader</i>\n➪<b>Developer</b> : ✫[SehathPerera](https://t.me/SehathSanvidu)\n➪<b>Language</b> : ✫<i>Python3</i>\n➪<b>Server</b> : ✫[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➪<b>Source Code</b> : ✫[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://github.com/PereraSehath)",
+       await message.reply("➪<b>Name</b> : ✫<i>Song Downloader</i>\n➪<b>Developer</b> : ✫[彡 Pʀɪᴍᴇ Hʀɪᴛᴜ »⃟🇮🇳 ๛](https://t.me/Prime_Hritu)",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -101,7 +101,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎧 𝗧𝗶𝘁𝘁𝗹𝗲 : [{title[:35]}]({link})\n⏳ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : `{duration}`\n👀 𝐕𝐢𝐞𝐰𝐬 : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @AnnieElizaSongDT_Bot'
+        rep =  f'🎧 𝗧𝗶𝘁𝘁𝗹𝗲 : [{title[:35]}]({link})\n⏳ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : `{duration}`\n👀 𝐕𝐢𝐞𝐰𝐬 : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @Private_MusicDownBot'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
